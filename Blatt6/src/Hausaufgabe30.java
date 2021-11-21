@@ -15,7 +15,7 @@ public class Hausaufgabe30 {
 		//paintSchach(spaltenAnzahl*40,zeilenAnzahl*40);
 		paintSchach800(95,160);
 		//test
-		
+		//test
 	}
 	
 	static void paintSchach800(int n, int m) {
