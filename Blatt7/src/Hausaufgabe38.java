@@ -73,7 +73,7 @@ public class Hausaufgabe38 {
 				
 				
 				//mat2[i][j] = mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j];
-				//
+				//test
 			}
 		}
 		return mat2;
