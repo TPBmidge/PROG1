@@ -5,10 +5,12 @@ public class Hausaufgabe38 {
 		// TODO Auto-generated method stub
 		int[][] matrix = genMatrix(5,6);
 		
-		System.out.println(getMinValue(matrix));
 		
-		setMinValue(matrix, 33);
+		
+
+		matrix = genMatrix(5, 5);
 		print2DimArray(matrix);
+		generateMeanMat(matrix);
 
 	}
 	
@@ -32,49 +34,53 @@ public class Hausaufgabe38 {
 	
 	static int [][] generateMeanMat(int[][] mat){
 		int[][] mat2 = new int[mat.length][mat[0].length];
-		//maybe
 		
-		for (int i = 0; i < mat2.length; i++) {
-			for (int j = 0; j < mat2[i].length; j++) {
-				//ecke links oben
-				if(i == 0 && j == 0) {
-					
+		for (int i = 0; i < mat.length; i++) {
+			for (int j = 0; j < mat[i].length; j++) {
+				int sum = 0;
+				int count = 0;
+				//links
+				if(i-1 >= 0) {
+					sum = sum+mat[i-1][j];
+					count ++;
 				}
-				//ecke links unten
-				else if(i == mat.length && j == 0) {
-					
+				//oben
+				if(j-1 >= 0) {
+					sum = sum+mat[i][j-1];
+					count++;
 				}
-				//ecke rechts oben
-				else if(i == 0 && j == mat[i].length-1) {
-					
+				//rechts
+				if(i+1 < mat.length) {
+					sum = sum+mat[i+1][j];
+					count ++;
 				}
-				//ecke rechts unten
-				else if(i == mat.length-1 && j == mat[i].length-1) {
-					
+				//unten
+				if(j+1 < mat[0].length) {
+					sum = sum+mat[i][j+1];
+					count ++;
 				}
-				//erste Zeile
-				else if(i == 0) {
-					
+				//oben-links
+				if(i-1 >= 0 && j-1 >= 0) {
+					sum = sum+mat[i-1][j-1];
+					count ++;
 				}
-				//letzte Zeile
-				else if(i == mat.length-1) {
-					
+				//oben-rechts
+				if(j-1 >= 0 && i+1 < mat.length) {
+					sum = sum+mat[i+1][j-1];
+					count ++;
 				}
-				//erste Spalte
-				else if(j == 0) {
-					
+				//unten-links
+				if(j+1 < mat[0].length && i-1 >= 0) {
+					sum = sum+mat[i-1][j+1];
+					count ++;
 				}
-				//letzte Spalte
-				else if(j == mat[i].length-1) {
-					
+				//unten-rechts
+				if(j+1 < mat[0].length && i+1 < mat.length) {
+					sum = sum+mat[i+1][j+1];
+					count ++;
 				}
-				//mittel
-				
-				
-				
-				
-				//mat2[i][j] = mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j]+mat[i][j];
-				//test
+				count++;
+				mat2[i][j] += sum / count;
 			}
 		}
 		return mat2;
