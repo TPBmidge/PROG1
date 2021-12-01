@@ -32,6 +32,7 @@ public class Hausaufgabe38 {
 	
 	static int [][] generateMeanMat(int[][] mat){
 		int[][] mat2 = new int[mat.length][mat[0].length];
+		//maybe
 		
 		for (int i = 0; i < mat2.length; i++) {
 			for (int j = 0; j < mat2[i].length; j++) {
