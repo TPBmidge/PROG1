@@ -1,4 +1,3 @@
-package Blatt7;
 
 import static jsTools.Input.*;
 import javax.net.ssl.SNIMatcher;
