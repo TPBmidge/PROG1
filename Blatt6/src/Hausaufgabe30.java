@@ -13,7 +13,7 @@ public class Hausaufgabe30 {
 		//int spaltenAnzahl = Integer.parseInt(JOptionPane.showInputDialog("Anzahl Spalten"));
 		//int zeilenAnzahl = Integer.parseInt(JOptionPane.showInputDialog("Anzahl Zeilen"));
 		//paintSchach(spaltenAnzahl*40,zeilenAnzahl*40);
-		paintSchach800(95,160);
+		paintSchach800(40,60);
 		//test
 		//test
 	}
