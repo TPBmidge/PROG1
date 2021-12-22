@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Manuel/OneDrive/HSA/PROG1/Tools/jsTools.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manu/OneDrive/HSA/PROG1/Tools/jsTools.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

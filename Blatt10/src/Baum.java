@@ -2,7 +2,7 @@ import static jsTools.Graph.*;
 import java.util.concurrent.ThreadLocalRandom;
 class Baum{
     int x,y,h,b;
-    String col=green;   // static String green="green"
+    String col="green";   // static String green="green"
     Kugel kugeln[];
     Kerze kerzen[];
     Stern sterne[];
