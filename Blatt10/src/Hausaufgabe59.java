@@ -4,7 +4,7 @@ public class Hausaufgabe59 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		paintCircle(100,800,100,0);
+		paintCircle(100,100,500,0);
 
 	}
 	
@@ -18,7 +18,7 @@ public class Hausaufgabe59 {
 			}else {
 				col = "blue";
 			}
-			addCircle(100, 100, d, col);
+			addCircle(x, y, d, col);
 			if(i==1)
 			paintCircle(x,y+(d/4),d/2,0);
 			else
@@ -39,9 +39,9 @@ public class Hausaufgabe59 {
 			}
 			addCircle(x, y, d, col);
 			if(i==1)
-				paintCircle(x,y+(d/4),d/2,0);
-				else
-				paintCircle(x,y+(d/4),d/2,1);
+			paintCircle(x,y+(d/4),d/2,0);
+			else
+			paintCircle(x,y+(d/4),d/2,1);
 		}
 		
 	}
